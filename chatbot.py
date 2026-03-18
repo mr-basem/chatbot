@@ -4,7 +4,7 @@ import google.generativeai as genai
 import sqlite3
 
 # Gemini API
-genai.configure(api_key="AIzaSyDrdkbpD6irv4oQE6rPlmnmz7WK4lSwbgk")
+genai.configure(api_key="AIzaSyCQTKZ8Xh5YIheX-DYO9hOaDNnEtVgoeFo")
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
