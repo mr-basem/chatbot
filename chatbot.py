@@ -108,8 +108,17 @@ else:
 
         # Display assistant response in chat message container
         with st.chat_message("assistant"):
-            response = model.generate_content(full_prompt)
-            st.markdown(response.text)
+            with st.spinner("Thinking..."):
+                response = model.generate_content(full_prompt, stream=True)
+            
+            def stream_data():
+                import time
+                for chunk in response:
+                    for word in chunk.text.split(" "):
+                        yield word + " "
+                        time.sleep(0.05)
+                        
+            full_response = st.write_stream(stream_data)
             
         # Add assistant response to chat history
-        st.session_state.messages.append({"role": "assistant", "content": response.text})
+        st.session_state.messages.append({"role": "assistant", "content": full_response})
