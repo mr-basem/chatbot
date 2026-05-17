@@ -1,42 +1,42 @@
-# Environment & Secrets
-.env
-
-# Python cache
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.pyc
-.Python
 *.egg
 *.egg-info/
 dist/
 build/
-.eggs/
+*.whl
+
+# Environment
+.env
+*.env
 
 # Virtual environments
 venv/
-env/
 .venv/
-.env/
+env/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+# FAISS / vector indexes
+faiss_index/
+*.index
 
 # Logs
 logs/
 *.log
 
-# FAISS index (large binary files, regenerate from DB)
-faiss_index/
-
-# Database files
-*.db
-*.sqlite3
+# IDE
+.vscode/
+.idea/
+*.code-workspace
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Dev containers
+.devcontainer/
+
+# Local kemet repo clone
+kemet_repo/
