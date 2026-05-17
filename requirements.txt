@@ -1,3 +1,10 @@
 streamlit
+openai
+faiss-cpu
+sentence-transformers
+SQLAlchemy
+PyMySQL
 pandas
-google-generativeai
+sqlglot
+python-dotenv
+tiktoken

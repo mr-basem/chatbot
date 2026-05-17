@@ -1,0 +1,42 @@
+# Environment & Secrets
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# FAISS index (large binary files, regenerate from DB)
+faiss_index/
+
+# Database files
+*.db
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
